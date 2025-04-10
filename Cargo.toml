@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = [
+	"macros_logger",
+	"use_macros_logger",
+]
+
+[workspace.dependencies]
+env_logger = "0.11.8"
+log = "0.4.27"
