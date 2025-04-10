@@ -6,5 +6,5 @@ fn main(){
 
     env_logger::init();
     macros_logger::my_info!("simple logging");
-    macros_logger::my_info!("simple logging with args {}", "<null>");
+    macros_logger::my_info!("simple logging with args {}" => {"<null>"});
 }
