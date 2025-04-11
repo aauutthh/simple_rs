@@ -6,4 +6,4 @@ edition = "2024"
 [dependencies]
 env_logger = "0.11.8"
 log = "0.4.27"
-macros_logger = {path="../macros_logger"}
+mlogger = {path="../macros_logger", package="macros_logger"}
