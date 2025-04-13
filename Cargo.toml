@@ -3,6 +3,9 @@ resolver = "3"
 members = [
 	"macros_logger",
 	"use_macros_logger",
+	"macros_function_decorator",
+	"using_syn",
+	"tools/*",
 ]
 
 [workspace.dependencies]

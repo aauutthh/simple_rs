@@ -127,6 +127,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94"
 
 [[package]]
+name = "macros_function_decorator"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "macros_logger"
 version = "0.1.0"
 dependencies = [
@@ -240,6 +249,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "syn_token_tree"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "syn",
+]
+
+[[package]]
 name = "unicode-ident"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -252,6 +269,14 @@ dependencies = [
  "env_logger",
  "log",
  "macros_logger",
+]
+
+[[package]]
+name = "using_syn"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "syn",
 ]
 
 [[package]]
