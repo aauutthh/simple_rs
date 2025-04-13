@@ -1,4 +1,3 @@
-
 #[macro_export]
 macro_rules! simple_info{
     ($fmt:expr,$($args:tt)*) => {{
@@ -42,4 +41,14 @@ macro_rules! dsl_info {
         log::info!($fmt, $($args),*);
     };
 
+}
+
+#[macro_export]
+macro_rules! log_func {
+    (fn $fname:ident() $block:block) => {
+        fn $fname() {
+            println!("---- calling function {} ----", stringify!($fname));
+            $block
+        }
+    };
 }
